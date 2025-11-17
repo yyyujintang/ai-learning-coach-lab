@@ -1,0 +1,47 @@
+\frametitle{Code Quality \& Scalability}
+\begin{columns}
+\column{0.5\textwidth}
+\textbf{Best Practices:}
+\begin{itemize}
+    \item Type-safe TypeScript
+    \item Component-based architecture
+    \item Modular data structure
+    \item Clean separation of concerns
+    \item Consistent styling
+\end{itemize}
+
+\vspace{0.3cm}
+\textbf{File Structure:}
+\begin{verbatim}
+src/
+|-- components/
+|   |-- DefaultPath.tsx
+|   |-- CoCreationPath.tsx
+|   |-- ExplainablePath.tsx
+|-- data/
+|   |-- activities.ts
+|       (45 activities, 180+ exercises)
+|-- types.ts (Activity, Exercise)
+|-- App.tsx
+\end{verbatim}
+
+\column{0.5\textwidth}
+\textbf{Extensibility:}
+\begin{itemize}
+    \item Easy to add new activities
+    \item Simple to create new prototypes
+    \item Configurable recommendation algorithm
+    \item Scalable to other domains
+\end{itemize}
+
+\vspace{0.3cm}
+\begin{exampleblock}{Future Enhancements}
+\begin{itemize}
+    \item User authentication
+    \item Progress tracking
+    \item Analytics dashboard
+    \item A/B testing framework
+    \item Backend integration
+\end{itemize}
+\end{exampleblock}
+\end{columns}

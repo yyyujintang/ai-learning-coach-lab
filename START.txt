@@ -1,0 +1,41 @@
+===============================================
+   AI Learning Coach Lab - Quick Start
+===============================================
+
+【Requirements】
+- Node.js (v14-v16 or v18+)
+  Download: https://nodejs.org/
+
+【Steps】
+1. Open Terminal/Command Prompt
+
+2. Navigate to project folder:
+   cd path/to/final
+
+3. Install dependencies:
+   npm install
+
+4. Run the app:
+   npm run dev
+
+5. Open browser:
+   http://localhost:5173
+
+【That's it!】
+The app should now be running.
+
+【Troubleshooting】
+- If "npm install" fails:
+  Delete node_modules folder and package-lock.json
+  Run: npm install again
+
+- If port 5173 is occupied:
+  The terminal will show an alternative port
+
+- For any other issues:
+  Check README.md or contact the team
+
+===============================================
+Project: COSC 267 HCI Final - Yujin Tang & Jun Jie Ou Yang
+===============================================
+
