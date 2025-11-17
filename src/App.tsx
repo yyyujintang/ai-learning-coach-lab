@@ -64,6 +64,14 @@ function App() {
           🎓 AI Learning Coach Lab
         </h1>
         <p style={{
+          margin: '0 0 12px 0',
+          fontSize: '16px',
+          opacity: 0.9,
+          fontWeight: '500'
+        }}>
+          Team: Yujin Tang • Jun Jie Ou Yang
+        </p>
+        <p style={{
           margin: 0,
           fontSize: '18px',
           opacity: 0.95

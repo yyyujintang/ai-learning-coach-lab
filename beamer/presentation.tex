@@ -150,7 +150,7 @@ Implement three distinct prototypes representing different points on the automat
 \vspace{0.3cm}
 \begin{exampleblock}{Live Demo}
 \centering
-\texttt{localhost:5173}
+\url{https://ai-learning-coach-lab.vercel.app/}
 \end{exampleblock}
 \end{columns}
 \end{frame}
@@ -262,13 +262,12 @@ Netflix auto-play, YouTube recommendations, Amazon "You might like..."
 
 % -------------------- Co-Creation Path --------------------
 \begin{frame}{Prototype 2: Co-Creation Path}
-\begin{columns}
-\column{0.5\textwidth}
 \begin{block}{\faHandshake{} Collaborative Decision Making}
 User and AI work together to create learning plans
 \end{block}
 
-\vspace{0.2cm}
+\vspace{0.3cm}
+
 \textbf{Key Features:}
 \begin{itemize}
     \item Users set preferences (topic, difficulty, time)
@@ -276,34 +275,19 @@ User and AI work together to create learning plans
     \item \textcolor{blue!80}{\textbf{Click to reveal practice problems}}
     \item Users select from options
     \item Flexible, personalized results
-    \item Real-time filtering
 \end{itemize}
 
-\vspace{0.2cm}
+\vspace{0.3cm}
+
 \textbf{Design Philosophy:}
-\\[0.1cm]
+
 \textit{"Let's decide together - you know yourself best"}
 
-\column{0.5\textwidth}
-\begin{center}
-\begin{tikzpicture}[scale=0.65]
-    % Collaborative flow
-    \node[rectangle, draw, fill=blue!20, minimum width=2.2cm, minimum height=0.7cm] (user) at (-1.5,3) {User Input};
-    \node[rectangle, draw, fill=coCreationColor!20, minimum width=2.2cm, minimum height=0.7cm] (ai) at (1.5,3) {AI System};
-    \node[rectangle, draw, fill=yellow!20, minimum width=2.8cm, minimum height=0.9cm] (filter) at (0,1.5) {Filtered Options};
-    \node[rectangle, draw, fill=green!20, minimum width=2.8cm, minimum height=0.7cm] (select) at (0,0) {User Selection};
-    
-    \draw[->, thick] (user) -- (filter);
-    \draw[->, thick] (ai) -- (filter);
-    \draw[->, thick] (filter) -- (select);
-    \draw[->, thick, dashed] (select) -- (-2,0) -- (-2,3) -- (user);
-\end{tikzpicture}
-\end{center}
-
 \vspace{0.3cm}
+
 \textbf{Use Case:}
-\\Personalized learning, diverse needs, user empowerment
-\end{columns}
+
+Personalized learning, diverse needs, user empowerment
 \end{frame}
 
 \begin{frame}{Co-Creation Path: Strengths \& Weaknesses}
@@ -410,6 +394,57 @@ AI explains its reasoning and shows confidence
 \begin{exampleblock}{Real-World Examples}
 LIME/SHAP in ML, Google Search snippets, medical diagnosis systems
 \end{exampleblock}
+\end{frame}
+
+\begin{frame}{Dynamic Confidence Scoring System}
+\begin{block}{Innovation Highlight}
+Explainable Path implements a \textbf{dynamic confidence scoring system}
+\end{block}
+
+\vspace{0.1cm}
+
+\begin{columns}
+\column{0.5\textwidth}
+\textbf{Three Confidence Metrics:}
+\small
+\begin{itemize}
+    \item \textcolor{blue!80}{\textbf{Content Match (75-98\%)}}
+    \begin{itemize}
+        \item Topic relevance + exercises
+    \end{itemize}
+    
+    \item \textcolor{green!70!black}{\textbf{Difficulty Fit (70-95\%)}}
+    \begin{itemize}
+        \item Easy: 80-95\%
+        \item Medium: 75-90\%
+        \item Hard: 70-85\%
+    \end{itemize}
+    
+    \item \textcolor{orange!80}{\textbf{Time Suitability (70-95\%)}}
+    \begin{itemize}
+        \item Short ($\leq$20 min): 85-95\%
+        \item Medium (21-35 min): 78-90\%
+        \item Long ($>$35 min): 70-85\%
+    \end{itemize}
+\end{itemize}
+
+\column{0.5\textwidth}
+\textbf{Why This Matters:}
+\small
+\begin{itemize}
+    \item \faCheckCircle{} \textbf{Realistic:} Reflects AI uncertainty
+    \item \faCheckCircle{} \textbf{Dynamic:} Changes per recommendation
+    \item \faCheckCircle{} \textbf{Transparent:} Shows feature impact
+    \item \faCheckCircle{} \textbf{Educational:} Explains AI reasoning
+\end{itemize}
+
+\vspace{0.15cm}
+
+\begin{exampleblock}{User Experience}
+\small
+Click "Try Another" $\rightarrow$ scores recalculate $\rightarrow$ bars animate
+\end{exampleblock}
+\end{columns}
 \end{frame}
 
 % ============================================================
@@ -610,7 +645,7 @@ Transparency and control increase user satisfaction, but may slow decision-makin
 \end{center}
 
 \vspace{0.3cm}
-\texttt{localhost:5173}
+\url{https://ai-learning-coach-lab.vercel.app/}
 \end{columns}
 \end{frame}
 
@@ -698,7 +733,8 @@ src/
     \begin{itemize}
         \item \textcolor{blue!80}{Preview first 3 practice problems}
         \item View AI explanations
-        \item Examine confidence metrics
+        \item \textcolor{blue!80}{\textbf{Observe dynamic confidence scores}}
+        \item Click "Try Another" to see scores change
         \item Toggle transparency
         \item Show database statistics (180+ problems)
     \end{itemize}
@@ -837,7 +873,8 @@ This framework can inform design decisions for any AI-powered recommendation sys
 
 \vspace{1cm}
 
-\texttt{Demo: localhost:5173}
+\textbf{Live Demo:}\\
+\url{https://ai-learning-coach-lab.vercel.app/}
 
 \vspace{0.5cm}
 
