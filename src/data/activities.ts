@@ -1353,13 +1353,13 @@ export function getRecommendation(preferences?: {
     }
     
     // Filter by difficulty
-    if (preferences.difficulty) {
+    if (preferences?.difficulty) {
       filtered = filtered.filter(act => act.difficulty === preferences.difficulty);
     }
     
     // Filter by time available
-    if (preferences.timeAvailable) {
-      filtered = filtered.filter(act => act.estimatedTime <= preferences.timeAvailable);
+    if (preferences?.timeAvailable) {
+      filtered = filtered.filter(act => act.estimatedTime <= (preferences.timeAvailable || 60));
     }
   }
 

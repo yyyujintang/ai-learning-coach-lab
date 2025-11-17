@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { LearningActivity, UserPreference } from '../types';
-import { learningActivities, getRecommendation } from '../data/activities';
+import { learningActivities } from '../data/activities';
 
 /**
  * Co-Creation Path
